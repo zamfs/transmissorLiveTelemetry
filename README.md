@@ -17,7 +17,7 @@ Since web browsers cannot natively listen to local UDP ports for security reason
 If you are running the source code directly, you will need:
 * [Node.js](https://nodejs.org/) (v14 or higher)
 
-*(Note: If you are using the pre-compiled `.exe` standalone version, no installation is required. You can find it here: https://drive.google.com/file/d/15WCacnMPL4BgfJvhaQsOyZD5ZDxrf55e/view?usp=sharing).*
+*(Note: If you are using the pre-compiled `.exe` standalone version, no installation is required. You can find it here: https://drive.google.com/file/d/15WCacnMPL4BgfJvhaQsOyZD5ZDxrf55e/view?usp=sharing (Currently the `.exe` is a BETA version - 6/23/2026)).*
 
 ## Installation
 1. Clone this repository or download the source code.
