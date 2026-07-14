@@ -5,7 +5,7 @@ const { Server } = require("socket.io");
 
 const io = new Server(http, {
     cors: { 
-            origin: "https://livetelemetryviewer.onrender.com", 
+            origin: "*", 
             methods: ["GET", "POST"] 
         }
 });
