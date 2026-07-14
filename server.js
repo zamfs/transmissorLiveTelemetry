@@ -12,6 +12,10 @@ const io = new Server(http, {
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('Server ONLINE');
+})
+
 // Rota para o Python enviar dados (POST)
 app.post('/telemetry', (req, res) => {
     io.emit('telemetry_update', req.body);
