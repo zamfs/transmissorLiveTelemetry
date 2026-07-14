@@ -4,7 +4,10 @@ const http = require('http').createServer(app);
 const { Server } = require("socket.io");
 
 const io = new Server(http, {
-    cors: { origin: "*", methods: ["GET", "POST"] }
+    cors: { 
+            origin: "https://livetelemetryviewer.onrender.com", 
+            methods: ["GET", "POST"] 
+        }
 });
 
 app.use(express.json());
