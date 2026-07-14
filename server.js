@@ -28,6 +28,10 @@ app.post('/telemetry', (req, res) => {
 io.on('connection', (socket) => {
     console.log(`🟢 Novo cliente conectado ao Socket! ID: ${socket.id}`);
 
+    socket.on('telemetry_from_bridge', (data) => {
+        io.emit('telemetry_update', data);
+    });
+
     socket.on('disconnect', () => {
         console.log(`⚪ Cliente desconectou: ${socket.id}`);
     });
